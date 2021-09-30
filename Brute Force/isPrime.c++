@@ -1,9 +1,9 @@
 #include <iostream>
 using namespace std;
 
+// Function to check if the number is prime
 bool checkPrime(int number) {
     bool isPrime;
-    // Function to check if the number is prime
     if (number == 0)
         isPrime = false;
     else if (number == 1 || number == 2)
@@ -27,9 +27,8 @@ int main() {
     int number;
     cout << "Enter a number to check if is prime: ";
     cin >> number;
-    bool isPrime = checkPrime(number);
     cout << "Is "<< number << " prime? ";
-    if(isPrime == true)
+    if(checkPrime(number) == true)
         cout << "Yes";
     else
         cout << "No";

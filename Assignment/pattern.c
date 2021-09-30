@@ -1,5 +1,6 @@
 #include <stdio.h>
 
+// Algorithm for pattern checking (Recursive)
 int checkMatch (int text[], int pattern[], int start) {
     int m = 3;
     int max = 8;
